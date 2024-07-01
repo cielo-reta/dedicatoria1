@@ -1,0 +1,94 @@
+<style >body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffefef;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #ffadad;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6f6f;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 20%;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ff6f6f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4c4c;
+}
+
+#love-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #ff6f6f;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
+}
+</style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Pareja</title>
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Para Mi Amor</h1>
+        <p class="message">Eres lo mejor que me ha pasado. Gracias por estar siempre a mi lado. Te amo con todo mi corazón.</p>
+        <img src="primeraDedicada.jpeg" alt="Imagen romántica">
+        <button onclick="displayLoveMessage()">Haz clic aquí</button>
+        <p id="love-message" class="hidden">Siempre serás mi persona favorita.</p>
+    </div>
+    <footer>
+        <p>Con amor, Tu novia "CIELO RUBIIIII♥"</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script t>
+        function displayLoveMessage() {
+    document.getElementById('love-message').classList.toggle('hidden');
+}
+
+    </script>
+</body>
+</html>
